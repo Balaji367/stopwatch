@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-shadow:border-box;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    position:relative;
+    min-height: 100vh;
+    background:black;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.time{
+    font-size:5rem;
+    font-weight: 700;
+    color:yellow;
+    text-align:center;
+    display:block;
+    position:absolute;
+    top:48%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.value{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:none;
+}
+.value input{
+    margin:1rem;
+    display:inline-block;
+    background:black;
+    color:yellow;
+    border:none;
+    border-bottom:3px solid transparent;
+    font-size:6rem;
+    text-align:center;
+    margin-bottom:5rem;
+    width:15rem;
+    box-shadow:0 .5rem 1rem yellow;
+    transition:all .2s ease;
+}
+.value input:focus{
+    outline:none;
+    border-bottom:3px solid yellow;
+    box-shadow:0 .8rem 1.5rem yellow;
+}
+.value input:focus:valid{
+    border-bottom:1px solid green;
+}
+.value .buttons button:not(:last-child){
+    margin-right: 8.5rem;
+}
+.value .buttons button{
+    background:black;
+    color:yellow;
+    text-align:center;
+    font-size: 4rem;
+    font-weight: 900;
+    display: inline-block;
+    border:none;
+}
+.buttons button:focus{
+    outline:none;
+}
+.stopwatch{
+    position:absolute;
+    top:85%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:black;
+    color:yellow;
+    text-align:center;
+    font-size: 2rem;
+    display: inline-block;
+    border:none;
+    box-shadow: 0 .5rem .8rem yellow;
+    padding:.8rem 3rem;
+    text-transform: uppercase;
+    border:1px solid yellow;
+    display:inline-block;
+}
+.stopwatch:focus{
+    outline:none;
+    box-shadow:0 .2rem .4rem yellow;
+}
+@media (max-width:400px){
+    .stopwatch{
+        top:75%;
+    }
+}
+.clock{
+    position:absolute;
+    top:85%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:black;
+    color:yellow;
+    text-align:center;
+    font-size: 2rem;
+    display: inline-block;
+    border:none;
+    box-shadow: 0 .5rem .8rem yellow;
+    padding:.8rem 3rem;
+    text-transform: uppercase;
+    border:1px solid yellow;
+    display:none;
+}
+.clock:focus{
+    outline:none;
+    box-shadow:0 .2rem .4rem yellow;
+}
+@media (max-width:400px){
+    .clock{
+        top:75%;
+    }
+}
