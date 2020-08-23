@@ -81,6 +81,7 @@ body{
     color:yellow;
     text-align:center;
     font-size: 2rem;
+    font-weight:500;
     display: inline-block;
     border:none;
     box-shadow: 0 .5rem .8rem yellow;
@@ -103,6 +104,7 @@ body{
     color:yellow;
     text-align:center;
     font-size: 2rem;
+    font-weight:500;
     display: inline-block;
     border:none;
     box-shadow: 0 .5rem .8rem yellow;
