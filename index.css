@@ -74,7 +74,7 @@ body{
 }
 .stopwatch{
     position:absolute;
-    top:85%;
+    top:20%;
     left:50%;
     transform:translate(-50%,-50%);
     background:black;
@@ -91,16 +91,12 @@ body{
 }
 .stopwatch:focus{
     outline:none;
-    box-shadow:0 .2rem .4rem yellow;
+    box-shadow:0 -.2rem .4rem yellow;
 }
-@media (max-width:400px){
-    .stopwatch{
-        top:75%;
-    }
-}
+
 .clock{
     position:absolute;
-    top:85%;
+    top:20%;
     left:50%;
     transform:translate(-50%,-50%);
     background:black;
@@ -117,10 +113,5 @@ body{
 }
 .clock:focus{
     outline:none;
-    box-shadow:0 .2rem .4rem yellow;
-}
-@media (max-width:400px){
-    .clock{
-        top:75%;
-    }
+    box-shadow:0 -.2rem .4rem yellow;
 }
